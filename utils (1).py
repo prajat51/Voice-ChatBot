@@ -8,15 +8,15 @@ from state import session_state
  
 # === Azure + AWS setup ===
 BASE_URL = "https://chatgpt-nlpteam-dev.openai.azure.com/"
-API_KEY = "c9b45fca1ad64622bdb26a44afeb2450"
+API_KEY = "secret-key"
 DEPLOYMENT_NAME = "gpt-4o"
  
 SPEECH_ENDPOINT = "https://openai-whisper-genai.openai.azure.com/"
-SPEECH_KEY = "579464e821824b59b6824bd7f91fac69"
+SPEECH_KEY = "secret-key"
 WHISPER_DEPLOYMENT_NAME = "genai-whisper"
 WHISPER_API_VERSION = "2023-09-01-preview"
  
-polly_client = boto3.client("polly", region_name="us-east-1", aws_access_key_id="AKIAUZE2WFS3G7TW2FHR", aws_secret_access_key="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")
+polly_client = boto3.client("polly", region_name="us-east-1", aws_access_key_id="secret-key", aws_secret_access_key="Secret-key")
  
 llm = AzureChatOpenAI(
     azure_endpoint=BASE_URL,
